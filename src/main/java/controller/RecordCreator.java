@@ -3,12 +3,11 @@ package controller;
 import model.Record;
 import service.ResourceManager;
 import view.ConsoleView;
-import view.Constants;
 
-import java.io.UnsupportedEncodingException;
 import java.util.Scanner;
 
-import static view.Constants.*;
+import static view.constants.RegexConstant.*;
+import static view.constants.InputConstants.*;
 
 
 public class RecordCreator {
@@ -44,7 +43,7 @@ public class RecordCreator {
             if (isRightInputString(string, regex)) {
                 return string;
             }
-            view.printMessage(view.manager.getValue(Constants.INPUT_WRONG) + " [" + regex + " ]");
+            view.printMessage(view.manager.getValue(INPUT_WRONG));
         }
     }
 
