@@ -6,8 +6,8 @@ import service.ResourceManager;
 import java.util.Locale;
 import java.util.Scanner;
 
-import static view.constants.InputConstants.*;
-import static view.constants.MenuConstants.*;
+import static view.constants.Constant.MenuConstants.*;
+import static view.constants.Constant.InputConstants.*;
 
 
 public class ConsoleView {

@@ -4,9 +4,9 @@ import view.exception.WrongInputException;
 import model.DataBase;
 import model.Record;
 import view.ConsoleView;
-import view.constants.InputConstants;
 
 import java.util.Scanner;
+import static view.constants.Constant.InputConstants.*;
 
 public class MainController {
 
@@ -26,7 +26,7 @@ public class MainController {
                     case 1:
                         RecordCreator recordCreator = new RecordCreator(view, scanner);
                         dataBase.addRecord(recordCreator.createRecord());
-                        view.printMessage(view.manager.getValue(InputConstants.RECORD_ADDED));
+                        view.printMessage(view.manager.getValue(RECORD_ADDED));
                         break;
                     case 2:
                         for (Record record : dataBase.getAllRecords()) {

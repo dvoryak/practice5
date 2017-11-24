@@ -6,8 +6,8 @@ import view.ConsoleView;
 
 import java.util.Scanner;
 
-import static view.constants.RegexConstant.*;
-import static view.constants.InputConstants.*;
+import static view.constants.Constant.InputConstants.*;
+import static view.constants.Constant.RegexConstant.*;
 
 
 public class RecordCreator {
